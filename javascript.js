@@ -13,13 +13,58 @@ function getHumanChoice(){
     return gameChoices(choice);
 }
 
+function resultCheck(humanChoice, computerChoice){
+    if(humanChoice === computerChoice){
+        return "Tie";
+    }
+    else if(humanChoice === "rock" && computerChoice === "scissors" ||
+            humanChoice === "paper" && computerChoice === "rock" ||
+            humanChoice === "scissors" && computerChoice === "paper"){
+                return "Win";
+            }
+    else{
+        return "Loss";
+    }
+}
+
 function playRound(humanChoice, computerChoice){
-
+    console.log("Human Choice: " + humanChoice);
+    console.log("Computer Choice: " + computerChoice);
+    result = resultCheck(humanChoice, computerChoice);
+    switch(result){
+        case "Win":
+            console.log("Congrats you won this round!\n");
+            break;
+        case "Tie":
+            console.log("This round was a tie\n");
+            break;
+        case "Loss":
+            console.log("Sorry! You lost this round :(\n");
+            break;
+    }
+    return result;
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-for(let i = 0; i < 5; i++){
-    playRound(humanSelection, computerSelection);
+function playGame(){
+    let humanScore = 0;
+    let computerScore = 0;
+    for(let i = 0; i < 5; i++){
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        result = playRound(humanSelection, computerSelection);
+        switch(result){
+            case "Win":
+            humanScore++;
+            break;
+        case "Tie":
+            break;
+        case "Loss":
+            computerScore++;
+            break;
+        }
+    }
+    console.log("Final Score is " + humanScore + " - " + computerScore);
 }
+
+playGame();
