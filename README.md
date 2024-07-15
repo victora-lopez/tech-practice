@@ -1,0 +1,1 @@
+This repository will hold all the different technologies I am learning on my full stack development so my github is a little more organized and highlights more of my projects and personal work rather than the technologies I have been learning along the way.
