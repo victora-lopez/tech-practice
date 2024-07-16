@@ -1,0 +1,30 @@
+body{
+    background-image: url(background-img.jpg);
+    background-size: cover;
+}
+
+h2{
+    color: #FFCBAA;
+    text-align: center;
+    border: 5px solid;
+    cursor: pointer;
+}
+
+p{
+    color: pink;
+    text-decoration: dashed;
+    line-height: 20px;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+img{
+    float: left;
+}
+footer{
+    clear: both;
+    text-align: center;
+}
