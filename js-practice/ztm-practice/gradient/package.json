@@ -1,0 +1,14 @@
+{
+  "name": "background-generator",
+  "version": "1.0.0",
+  "description": "Creates a gradient background using two color inputs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
