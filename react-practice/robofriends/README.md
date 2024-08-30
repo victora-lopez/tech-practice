@@ -1,9 +1,5 @@
-# robofriends
-Tutorial for React
-To run the project:
+Robofriends was my first React project which the focus to learn how to combine my knowledge of HTML,CSS, and JavaScript and build usable, useful components for webpages.
 
-1. Clone this repo
-2. Run `npm install`
-3. Run `npm start`
+This project has a searchable list of robots through a searchbar, a scrollable section for the robots, and a loading page if there are any issues which the page. 
 
-*visist https://zerotomastery.io/ for more*
+A JSON-formatted API was used to retrieve the list of robots for this project.
